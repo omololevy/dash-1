@@ -1,0 +1,414 @@
+<header id="home-header">
+  <div class="container" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+    <div class="home-logo">
+      <img src="assets/images/logo-full-strong.png" alt="Egret logo">
+    </div>
+    <span fxFlex></span>
+    <button mat-button id="dashboard-topbtn" class="hometop-btn" routerLink="/dashboard"><strong>My Dashboard</strong></button>
+  </div>
+</header>
+<section class="home-intro-section">
+  <div class="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
+    <div fxFlex="50">
+      <h1 class="home-intro-title">Your all in one Angular Material Design Admin</h1>
+      <div class="home-intro-desc">
+        Egret implements the official Angular Material Design components and built with Angular CLI. <br> No Bootstrap!,
+        No jQuery! and Only TypeScript!
+      </div>
+      <div class="intro-list" fxLayout="column" fxLayoutGap="30px">
+        <div fxFlex="100">
+          <mat-icon color="accent">check</mat-icon><span fxFlex="20px"></span> Custom Pipes, Directives And Components</div>
+        <div fxFlex="100">
+          <mat-icon color="accent">check</mat-icon><span fxFlex="20px"></span> Super Flexible And Customizable</div>
+        <div fxFlex="100">
+          <mat-icon color="accent">check</mat-icon><span fxFlex="20px"></span> Free Integrated Landing Page</div>
+      </div>
+      <div fxLayout="row" fxLayout.lt-sm="column">
+        <button mat-raised-button mat-lg-button color="primary" routerLink="/dashboard">DASHBOARD</button>
+        <span fxFlex="20px"></span>
+        <button mat-raised-button mat-lg-button id="frontend-btn" scrollTo="portfolio-section" color="accent">FRONT END</button>
+      </div>
+    </div>
+    <span fxFlex.lt-md="30px" fxFlex="0"></span>
+    <div fxFlex="50">
+      <div class="intro-product">
+        <a matRipple class="intro-product-link" href="https://themeforest.net/item/egret-angular-4-material-design-admin-template/20161805?ref=mh_rafi" target="_blank">
+          <div class="price">$20</div>
+          <span class="price-text">Buy From ThemeForest</span>
+        </a>
+        <img mat-card-image src="assets/images/egret-screen.png" [style.margin]="'0 !important'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio-section" class="portfolio home-section light-gray">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Latest Works</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molestias ab adipisci eius nisi placeat
+        at.
+      </p>
+    </div>
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
+      <div fxFlex="33.33">
+        <mat-card class="p-0 m-0">
+          <img mat-card-image src="assets/images/sq-12.jpg">
+          <mat-card-content>
+            <h5><strong><a href="">Project One</a></strong></h5>
+            <p>
+              Adipisci quas repellat sed. Quasi quaerat aut nam possimus vitae dignissimos, sapiente est atque tenetur.
+            </p>
+            <mat-divider class="mb-1"></mat-divider>
+            <button mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+            <button mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex="33.33">
+        <mat-card class="p-0 m-0">
+          <img mat-card-image src="assets/images/sq-9.jpg">
+          <mat-card-content>
+            <h5><strong><a href="">Project Two</a></strong></h5>
+            <p>
+              Adipisci quas repellat sed. Quasi quaerat aut nam possimus vitae dignissimos, sapiente est atque tenetur.
+            </p>
+            <mat-divider class="mb-1"></mat-divider>
+            <button mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+            <button mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex="33.33">
+        <mat-card class="p-0 m-0">
+          <img mat-card-image src="assets/images/sq-10.jpg">
+          <mat-card-content>
+            <h5><strong><a href="">Project Three</a></strong></h5>
+            <p>
+              Adipisci quas repellat sed. Quasi quaerat aut nam possimus vitae dignissimos, sapiente est atque tenetur.
+            </p>
+            <mat-divider class="mb-1"></mat-divider>
+            <button mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+            <button mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="text-center home-section-action">
+      <button mat-raised-button mat-lg-button color="accent">LOAD MORE</button>
+    </div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat unde inventore molestias ab adipisci eius nisi placeat
+        at.
+      </p>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="20px">
+      <div fxFlex="25">
+        <mat-card class="home-fancy-card">
+          <div fxLayout="column">
+            <div class="text-center">
+              <mat-icon mat-card-icon>dashboard</mat-icon>
+            </div>
+            <span fxFlex="20px"></span>
+            <h3 class="m-0 font-light">Business Application</h3>
+            <span fxFlex="20px"></span>
+            <p class="m-0 description">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+            </p>
+            <span fxFlex="40px"></span>
+            <div>
+              <button mat-button><strong class="text-muted">READ MORE</strong></button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div fxFlex="25">
+        <mat-card class="home-fancy-card">
+          <div fxLayout="column">
+            <div class="text-center">
+              <mat-icon mat-card-icon>perm_data_setting</mat-icon>
+            </div>
+            <span fxFlex="20px"></span>
+            <h3 class="m-0 font-light">Custom System Integration</h3>
+            <span fxFlex="20px"></span>
+            <p class="m-0 description">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+            </p>
+            <span fxFlex="40px"></span>
+            <div>
+              <button mat-button><strong class="text-muted">READ MORE</strong></button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div fxFlex="25">
+        <mat-card class="home-fancy-card">
+          <div fxLayout="column">
+            <div class="text-center">
+              <mat-icon mat-card-icon>storage</mat-icon>
+            </div>
+            <span fxFlex="20px"></span>
+            <h3 class="m-0 font-light">Database Administration</h3>
+            <span fxFlex="20px"></span>
+            <p class="m-0 description">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+            </p>
+            <span fxFlex="40px"></span>
+            <div>
+              <button mat-button><strong class="text-muted">READ MORE</strong></button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div fxFlex="25">
+        <mat-card class="home-fancy-card">
+          <div fxLayout="column">
+            <div class="text-center">
+              <mat-icon mat-card-icon>stay_primary_portrait</mat-icon>
+            </div>
+            <span fxFlex="20px"></span>
+            <h3 class="m-0 font-light">Custom Mobile Application</h3>
+            <span fxFlex="20px"></span>
+            <p class="m-0 description">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+            </p>
+            <span fxFlex="40px"></span>
+            <div>
+              <button mat-button><strong class="text-muted">READ MORE</strong></button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section home-cta">
+  <div class="container">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="20px">
+      <div fxFlex="66.666">
+        <h2>Egret Is A Complete UI Framework For Angular</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam, illum et quis officiis beatae.</p>
+      </div>
+      <div fxFlex="33.333" fxLayoutAlign="center center">
+        <button mat-raised-button mat-lg-button color="accent" (click)="buyEgret()">BUY EGRET NOW</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Choose a Plan</h2>
+      <mat-slide-toggle [(ngModel)]="isAnnualSelected" color="primary" class="mb-1">Get upto 10% discount annually</mat-slide-toggle>
+    </div>
+
+    <div fxLayout="row" fxLayoutWrap="wrap">
+      <!-- Pricing box -->
+      <div fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
+        <mat-card class="plan-pricing text-center p-0">
+          <mat-card-title class="light-gray">
+            <div class="card-title-text">
+              <div class="">Developer</div>
+              <div class="text-sm text-muted">For New Developers</div>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <h1><strong>FREE</strong></h1>
+            <mat-list dense class="mb-1">
+              <mat-list-item>10GB of Bandwidth</mat-list-item>
+              <mat-list-item>Max 50 connection</mat-list-item>
+              <mat-list-item>512MB RAM</mat-list-item>
+              <mat-list-item class="text-muted">Unlimited access</mat-list-item>
+              <mat-list-item class="text-muted">Unlimited User</mat-list-item>
+              <mat-list-item class="text-muted">Data analytics</mat-list-item>
+            </mat-list>
+            <button mat-raised-button class="mat-accent">Choose</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- Pricing box -->
+      <div fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
+        <mat-card class="plan-pricing text-center p-0">
+          <mat-card-title class="mat-bg-primary">
+            <div class="card-title-text">
+              <div class="">Starter</div>
+              <div class="text-sm text-muted-white">For Professional Developers</div>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <h1>
+              <strong>$ 
+                  <span *ngIf="!isAnnualSelected">{{30}} /Mo</span>
+                  <span *ngIf="isAnnualSelected">{{30 * 12 * .9}} /Yr</span>
+                  </strong>
+            </h1>
+            <mat-list dense class="mb-1">
+              <mat-list-item>100GB of Bandwidth</mat-list-item>
+              <mat-list-item>Max 500 connection</mat-list-item>
+              <mat-list-item>1GB RAM</mat-list-item>
+              <mat-list-item>Unlimited access</mat-list-item>
+              <mat-list-item class="text-muted">Unlimited User</mat-list-item>
+              <mat-list-item class="text-muted">Data analytics</mat-list-item>
+            </mat-list>
+            <button mat-raised-button class="mat-accent">Choose</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- Pricing box -->
+      <div fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
+        <mat-card class="plan-pricing text-center p-0">
+          <mat-card-title class="light-gray">
+            <div class="card-title-text">
+              <div class="">Business</div>
+              <div class="text-sm text-muted">For Small Businesses</div>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <h1>
+              <strong>$ 
+                  <span *ngIf="!isAnnualSelected">{{60}} /Mo</span>
+                  <span *ngIf="isAnnualSelected">{{60 * 12 * .9}} /Yr</span>
+                  </strong>
+            </h1>
+            <mat-list dense class="mb-1">
+              <mat-list-item>100GB of Bandwidth</mat-list-item>
+              <mat-list-item>Max 1500 connection</mat-list-item>
+              <mat-list-item>2GB RAM</mat-list-item>
+              <mat-list-item>Unlimited access</mat-list-item>
+              <mat-list-item>Unlimited User</mat-list-item>
+              <mat-list-item class="text-muted">Data analytics</mat-list-item>
+            </mat-list>
+            <button mat-raised-button class="mat-accent">Choose</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- Pricing box -->
+      <div fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50">
+        <mat-card class="plan-pricing text-center p-0">
+          <mat-card-title class="light-gray">
+            <div class="card-title-text">
+              <div class="">Enterprise</div>
+              <div class="text-sm text-muted">For Large companies</div>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-card-title>
+          <mat-card-content>
+            <h1>
+              <strong>$ 
+                  <span *ngIf="!isAnnualSelected">{{160}} /Mo</span>
+                  <span *ngIf="isAnnualSelected">{{160 * 12 * .9}} /Yr</span>
+                  </strong>
+            </h1>
+            <mat-list dense class="mb-1">
+              <mat-list-item>1000GB of Bandwidth</mat-list-item>
+              <mat-list-item>Max 5000 connection</mat-list-item>
+              <mat-list-item>8GB RAM</mat-list-item>
+              <mat-list-item>Unlimited access</mat-list-item>
+              <mat-list-item>Unlimited User</mat-list-item>
+              <mat-list-item>Data analytics</mat-list-item>
+            </mat-list>
+            <button mat-raised-button class="mat-accent">Choose</button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="home-section light-gray">
+  <div class="container">
+    <div class="section-header">
+      <h2>Send Us An Email</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, error.</p>
+    </div>
+    <form [formGroup]="contactForm">
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap">
+        <div fxFlex="100">
+          <div class="pb-1">
+            <mat-form-field class="full-width">
+              <input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Your Name">
+            </mat-form-field>
+            <small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required" class="form-error-msg">Name is required</small>
+          </div>
+          <div class="pb-1">
+            <mat-form-field class="full-width">
+              <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Your Email">
+            </mat-form-field>
+            <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email" class="form-error-msg">Invalid Email</small>
+          </div>
+
+        </div>
+        <div fxFlex="100">
+          <div class="pb-1">
+            <mat-form-field class="full-width">
+              <input matInput name="subject" [formControl]="contactForm.controls['subject']" placeholder="Subject">
+            </mat-form-field>
+            <small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">Subject is required</small>
+          </div>
+          <div class="pb-1">
+            <mat-form-field class="full-width">
+              <textarea matInput row="8" name="message" [formControl]="contactForm.controls['message']" placeholder="Message"></textarea>
+            </mat-form-field>
+            <small *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required" class="form-error-msg">Message is required</small>
+          </div>
+        </div>
+
+        <div fxFlex="100">
+          <button mat-fab color="primary" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="home-footer">
+  <section class="home-footer-top">
+    <div class="container">
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap">
+        <div fxFlex="50" class="footer-box">
+          <h4 class="footer-box-title"><b>About Us</b></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Officiis perferendis rem, aut aliquam neque nam? dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit. 
+            Officiis perferendis rem, aut aliquam.</p>
+          <button mat-raised-button color="accent">Contact Us</button>
+        </div>
+        <div fxFlex="25" class="footer-box">
+          <h4 class="footer-box-title"><b>Contact</b></h4>
+          <mat-list>
+            <mat-list-item>
+              <mat-icon mat-list-icon color="accent">email</mat-icon>
+              <h5 matLine><b>Email</b></h5>
+              <p matLine> email@abc.com </p>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon color="accent">location_on</mat-icon>
+                <h5 matLine><b>Adress</b></h5>
+                <p matLine>Topoban, Akhalia </p>
+                <p matLine>Sylhet 3114, BD </p>
+              </mat-list-item>
+          </mat-list>
+        </div>
+        <div fxFlex="25" class="footer-box">
+          <h4 class="footer-box-title"><b>Disclaimer</b></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis perferendis rem, aut aliquam neque nam?</p>
+          <div class="socials pt-1">
+            <ul>
+              <li><a href="" class="social-icon linkedin"></a></li>
+              <li><a href="" class="social-icon twitter"></a></li>
+              <li><a href="" class="social-icon facebook"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
