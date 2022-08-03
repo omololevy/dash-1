@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Router, NavigationEnd, ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import * as hopscotch from 'hopscotch';
-import 'rxjs/add/operator/filter';
+import { filter } from 'rxjs/operators';
 import { RoutePartsService } from "./services/route-parts/route-parts.service";
 
 
@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
     }
   }
   changePageTitle() {
-    this.router.events.filter(event => event instanceof NavigationEnd).subscribe((routeChange) => {
+    this.router.events.pipe(filter((event: any) => event instanceof NavigationEnd)).subscribe((routeChange:any) => {
       var routeParts = this.routePartsService.generateRouteParts(this.activeRoute.snapshot);
       if (!routeParts.length)
         return this.title.setTitle(this.appTitle);
