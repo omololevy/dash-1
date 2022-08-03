@@ -1,7 +1,7 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
-  "compilerOptions": {
+  "compilerOptions": 
+  {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -12,6 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
+    "strictPropertyInitialization": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
@@ -23,9 +24,12 @@
       "dom"
     ]
   },
-  "angularCompilerOptions": {
+  "angularCompilerOptions": 
+  {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   }
