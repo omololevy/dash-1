@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import { RoutePartsService } from '../../../services/route-parts/route-parts.service';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -15,7 +16,7 @@ export class BreadcrumbComponent implements OnInit {
     private routePartsService: RoutePartsService, 
     private activeRoute: ActivatedRoute
   ) {
-    this.router.events.filter(event => event instanceof NavigationEnd).subscribe((routeChange:any) => {
+    this.router.events.pipe(filter((event:any) => event instanceof NavigationEnd)).subscribe((routeChange:any) => {
       this.routeParts = this.routePartsService.generateRouteParts(this.activeRoute.snapshot);
       // generate url from parts
       this.routeParts.reverse().map((item, i) => {
@@ -38,7 +39,7 @@ export class BreadcrumbComponent implements OnInit {
   ngOnInit() {}
 
   parseText(part:any) {
-    part.breadcrumb = part.breadcrumb.replace(/{{([^{}]*)}}/g, function (a, b) {
+    part.breadcrumb = part.breadcrumb.replace(/{{([^{}]*)}}/g, function (a:any, b:any) {
       var r = part.params[b];
       return typeof r === 'string' ? r : a;
     });
